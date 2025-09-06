@@ -1,0 +1,84 @@
+<testsuites id="" name="" tests="2" failures="2" skipped="0" errors="0" time="38.554702999999996">
+<testsuite name="bookingtest.spec.ts" timestamp="2025-09-01T09:27:12.403Z" hostname="firefox" tests="2" failures="2" skipped="0" time="34.656" errors="0">
+<testcase name="Booking Appointment › should book an appointment successfully @sanity" classname="bookingtest.spec.ts" time="20.976">
+<failure message="bookingtest.spec.ts:31:7 should book an appointment successfully @sanity" type="FAILURE">
+<![CDATA[  [firefox] › bookingtest.spec.ts:31:7 › Booking Appointment › should book an appointment successfully @sanity 
+
+    Error: Timed out 10000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('heading', { name: 'Make Appointment' })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for getByRole('heading', { name: 'Make Appointment' })
+
+
+      26 |
+      27 |     // Assert that login was successful and we are on the appointment page.
+    > 28 |     await expect(page.getByRole('heading', { name: 'Make Appointment' })).toBeVisible({ timeout: 10000 });
+         |                                                                           ^
+      29 |   });
+      30 |
+      31 |   test('should book an appointment successfully @sanity', async ({ page }) => {
+        at C:\Users\user\OneDrive\Desktop\typeplay\my-tests\bookingtest.spec.ts:28:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\bookingtest-Booking-Appoin-cfd95-intment-successfully-sanity-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\bookingtest-Booking-Appoin-cfd95-intment-successfully-sanity-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[user
+ThisIsNotAPassword
+
+[[ATTACHMENT|test-results\bookingtest-Booking-Appoin-cfd95-intment-successfully-sanity-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\bookingtest-Booking-Appoin-cfd95-intment-successfully-sanity-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking Appointment › should not allow booking without a date" classname="bookingtest.spec.ts" time="13.68">
+<failure message="bookingtest.spec.ts:47:7 should not allow booking without a date" type="FAILURE">
+<![CDATA[  [firefox] › bookingtest.spec.ts:47:7 › Booking Appointment › should not allow booking without a date 
+
+    Error: Timed out 10000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('heading', { name: 'Make Appointment' })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for getByRole('heading', { name: 'Make Appointment' })
+
+
+      26 |
+      27 |     // Assert that login was successful and we are on the appointment page.
+    > 28 |     await expect(page.getByRole('heading', { name: 'Make Appointment' })).toBeVisible({ timeout: 10000 });
+         |                                                                           ^
+      29 |   });
+      30 |
+      31 |   test('should book an appointment successfully @sanity', async ({ page }) => {
+        at C:\Users\user\OneDrive\Desktop\typeplay\my-tests\bookingtest.spec.ts:28:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\bookingtest-Booking-Appoin-6322a-llow-booking-without-a-date-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\bookingtest-Booking-Appoin-6322a-llow-booking-without-a-date-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[user
+ThisIsNotAPassword
+
+[[ATTACHMENT|test-results\bookingtest-Booking-Appoin-6322a-llow-booking-without-a-date-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\bookingtest-Booking-Appoin-6322a-llow-booking-without-a-date-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

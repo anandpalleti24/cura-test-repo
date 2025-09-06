@@ -1,0 +1,4 @@
+username,password,expectedresult
+John Doe,ThisIsNotAPassword,success
+invalid,invalidpasword,failure
+johnklkl doe,Thisisnotapawsse,failure
